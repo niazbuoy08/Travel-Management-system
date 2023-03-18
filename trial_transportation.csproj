@@ -102,7 +102,10 @@
     <None Include="Resources\360_F_91618179_eR79OdR87jR9fp9S3aaiJGz4aGqkkwuE.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TextFile1.txt" />
+    <None Include="Resources\tumblr_oiwytz4dh41tf8vylo1_1280.png" />
+    <Content Include="TextFile1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

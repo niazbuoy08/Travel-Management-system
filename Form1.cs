@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -28,26 +29,11 @@ namespace trial_transportation
         string[] password = { "123456", "654321" };
         List<string> user = new List<string>();
         List<string> pass = new List<string>();
+        List<string> name = new List<string>();
 
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-            
-            StreamReader s1 = new StreamReader(@"C:\Users\nitol\source\repos\trial_transportation\trial_transportation\TexrFile1.txt");
-            string line = "";
-            while( (line = s1.ReadLine() ) != null)
-            {
-                string[ ] components= line.Split(" ".ToCharArray());
-               
-                user.Add(components[1]);
-                pass.Add(components[2]);
-            }
-
-            s1.Close();
-
-        }
+       
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -70,14 +56,17 @@ namespace trial_transportation
 
         private void button3_Click(object sender, EventArgs e)
         {
-            usern = textBox1.Text;
-            if(username.Contains(textBox1.Text) && password.Contains(textBox2.Text) && Array.IndexOf(username, textBox1.Text)== Array.IndexOf(password, textBox2.Text) ) {
-                Form2 f2 = new Form2();
-                f2.Show();
-                this.Hide();
 
-            }
-            else if(user.Contains(textBox1.Text) && pass.Contains(textBox2.Text) && Array.IndexOf(user.ToArray(), textBox1.Text) == Array.IndexOf(pass.ToArray(), textBox2.Text))
+
+
+            usern = textBox1.Text;
+           // if(username.Contains(textBox1.Text) && password.Contains(textBox2.Text) && Array.IndexOf(username, textBox1.Text)== Array.IndexOf(password, textBox2.Text) ) {
+             //   Form2 f2 = new Form2();
+               // f2.Show();
+                //this.Hide();
+
+//            }
+             if(user.Contains(textBox1.Text) && pass.Contains(textBox2.Text) && Array.IndexOf(user.ToArray(), textBox1.Text) == Array.IndexOf(pass.ToArray(), textBox2.Text))
             {
                 Form2 f2 = new Form2();
                 f2.Show();
@@ -89,6 +78,25 @@ namespace trial_transportation
 
                 MessageBox.Show("The username/password is incorrect");
             }
-        } 
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+            StreamReader s1 = new StreamReader(@"D:\SWE4202\travel management\trial_transportation\user.txt");
+            string line = "";
+            while ((line = s1.ReadLine()) != null)
+            {
+                string[] components = line.Split(" ".ToCharArray());
+
+
+                name.Add(components[0]);
+                user.Add(components[6]);
+                pass.Add(components[7]);
+            }
+
+            s1.Close();
+
+        }
     }
+
 }

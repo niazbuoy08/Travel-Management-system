@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace trial_transportation
@@ -28,13 +29,16 @@ namespace trial_transportation
 
         private void signup_Load(object sender, EventArgs e)
         {
-            StreamReader s1 = new StreamReader(@"C:\Users\nitol\source\repos\trial_transportation\trial_transportation\TexrFile1.txt");
+           
+
+
+            StreamReader s1 = new StreamReader(@"D:\SWE4202\travel management\trial_transportation\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
                 string[] components = line.Split(" ".ToCharArray());
 
-                user.Add(components[1]);
+                user.Add(components[6]);
 
             }
 
@@ -50,55 +54,71 @@ namespace trial_transportation
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            string a = (textBox6.Text);
-            int c = a.Length;
-
-
-            string b = (textBox7.Text);
-            int d = b.Length;
+            string phone = textBox2.Text;
+            string userName = textBox6.Text;
+            string name = textBox1.Text;
+            string pass = textBox7.Text;
 
 
-            if (c >= 4 && d >= 6)
-            {
-                string userName = textBox6.Text;
-                string name = textBox1.Text;
-                string pass = textBox7.Text;
-                string path = @"C:\Users\nitol\source\repos\trial_transportation\trial_transportation\TexrFile1.txt";
-                bool use = true;
-                foreach (string u in user)
+
+            string email = textBox3.Text;
+            string nation = textBox4.Text;
+            string gender = comboBox1.Text;
+            string country = textBox5.Text;
+
+           
+                string a = (textBox6.Text);
+                int c = a.Length;
+
+
+                string b = (textBox7.Text);
+                int d = b.Length;
+
+
+                if (c >= 4 && d >= 6)
                 {
-                    if (u == userName)
-                    {
-                        MessageBox.Show("Username not available!");
-                        use = false;
-                        break;
-                    }
-                }
-                if (use == true)
-                {
+                    
                    
+
+                    string path = @"D:\SWE4202\travel management\trial_transportation\user.txt";
+                    bool use = true;
+                    foreach (string u in user)
+                    {
+                        if (u == userName)
+                        {
+                            MessageBox.Show("Username not available!");
+                            use = false;
+                            break;
+                        }
+                    }
+
+                    if (use == true)
+                    {
+                        //int phone = Convert.ToInt32(textBox2.Text);
                         MessageBox.Show("created!");
 
-                        string s = textBox1.Text + " " + textBox2.Text + " " + textBox4.Text+ " " + textBox5.Text + " " + comboBox1.Text + " " + textBox6.Text + " " + textBox7.Text;
+                        string s = textBox1.Text + " " + textBox2.Text + " " + textBox4.Text + " " + comboBox1.Text + " " + textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;
 
-                    File.AppendAllText(path, name + " " + userName + " " + pass);
+                        File.AppendAllText(path, name + " " + phone + " " + email + " " +  nation + " " + gender + " " + country + " " + userName + " " + pass);
 
                         File.AppendAllText(path, "\n");
 
-                        Form1 f1 = new Form1();
+                        Form2 f1 = new Form2();
                         f1.Show();
                         this.Hide();
 
-                    
+
+                    }
                 }
-            }
 
 
-            else
-            {
-                MessageBox.Show("minimum 6 characters");
-            }
+                else
+                {
+                    MessageBox.Show("minimum 6 characters");
+                }
+          
+
+            
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
