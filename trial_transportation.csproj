@@ -46,6 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Booking.cs" />
+    <Compile Include="bus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus.Designer.cs">
+      <DependentUpon>bus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +74,9 @@
     <Compile Include="signup.Designer.cs">
       <DependentUpon>signup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="bus.resx">
+      <DependentUpon>bus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
