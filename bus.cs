@@ -11,9 +11,19 @@ using static trial_transportation.Booking;
 
 namespace trial_transportation
 {
+
+
+
+
     public partial class bus : Form
     {
+
+
+
         private List<Booking> bookings;
+
+
+
 
         public bus()
         {
@@ -21,18 +31,34 @@ namespace trial_transportation
             bookings = new List<Booking>();
         }
 
+
+
+
+
+
+
         private void bus_Load(object sender, EventArgs e)
         {
 
         }
+
+
+
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+
+
+
         private void button2_Click(object sender, EventArgs e)
         {
+
+
+
+
             string name = nameTextBox.Text;
             string email = emailTextBox.Text;
             string phone = phoneTextBox.Text;
@@ -40,6 +66,10 @@ namespace trial_transportation
             string To = comboBox2.SelectedItem.ToString();
             DateTime travelDate = travelDateTimePicker.Value.Date;
             int seatNumber = (int)seatNumericUpDown.Value;
+
+
+
+
 
             foreach (Booking booking in bookings)
             {
@@ -49,8 +79,15 @@ namespace trial_transportation
                     return;
                 }
             }
+
+
+
+
             Booking newBooking = new Booking(name, email, phone, From, To, travelDate, seatNumber);
             bookings.Add(newBooking);
+
+
+
 
 
             string bookingDetails = $"{newBooking.Name}, {newBooking.Email}, {newBooking.Phone}, {newBooking.From}, {newBooking.To}, {newBooking.TravelDate.ToShortDateString()}, Seat {newBooking.SeatNumber}";
@@ -69,10 +106,17 @@ namespace trial_transportation
             seatNumericUpDown.Value = 1;
         }
 
+
+
+
+
         private void button_remove_Click(object sender, EventArgs e)
         {
 
         }
+
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -80,5 +124,11 @@ namespace trial_transportation
             f2.Show();
             this.Hide();
         }
+
+
+
     }
+
+
+
 }

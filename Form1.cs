@@ -11,21 +11,43 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+
+
+
+
 namespace trial_transportation
 {
+
+
+
+
     public partial class Form1 : Form
     {
 
+
+
         public static Form1 instance;
         public string usern;
+
+
+
         public Form1()
         {
+
+
+
             InitializeComponent();
             instance = this;
 
+
+
+
         }
 
-       string[] username = { "sheona", "athena" };
+
+
+
+        string[] username = { "sheona", "athena" };
         string[] password = { "123456", "654321" };
         List<string> user = new List<string>();
         List<string> pass = new List<string>();
@@ -40,6 +62,10 @@ namespace trial_transportation
 
         }
 
+
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             signup signup = new signup();
@@ -49,10 +75,17 @@ namespace trial_transportation
 
         }
 
+
+
+
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+
+
+
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -66,6 +99,10 @@ namespace trial_transportation
                 //this.Hide();
 
 //            }
+
+
+
+
              if(user.Contains(textBox1.Text) && pass.Contains(textBox2.Text) && Array.IndexOf(user.ToArray(), textBox1.Text) == Array.IndexOf(pass.ToArray(), textBox2.Text))
             {
                 Form2 f2 = new Form2();
@@ -73,17 +110,32 @@ namespace trial_transportation
                 this.Hide();
             }
 
+
+
+
             else
             {
 
                 MessageBox.Show("The username/password is incorrect");
             }
+
+
+
         }
+
+
+
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
             StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\travel management\user.txt");
             string line = "";
+
+
+
+
             while ((line = s1.ReadLine()) != null)
             {
                 string[] components = line.Split(" ".ToCharArray());
@@ -94,19 +146,38 @@ namespace trial_transportation
                 pass.Add(components[7]);
             }
 
+
+
+
+
             s1.Close();
 
         }
+
+
+
+
+
 
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
+
+
+
+
         private void label4_Click(object sender, EventArgs e)
         {
 
         }
+
+
+
     }
+
+
+
 
 }

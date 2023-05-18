@@ -32,28 +32,49 @@ namespace trial_transportation
            
 
 
+
+
+
             StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\travel management\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
+
+
                 string[] components = line.Split(" ".ToCharArray());
 
                 user.Add(components[6]);
 
+
+
             }
+
+
+
 
             s1.Close();
         }
 
+
+
+
         private void button2_Click(object sender, EventArgs e)
         {
+
+
             Form1 form = new Form1();
             form.Show();
             this.Hide();
         }
 
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
+
+
+
             string phone = textBox2.Text;
             string userName = textBox6.Text;
             string name = textBox1.Text;
@@ -75,6 +96,9 @@ namespace trial_transportation
                 int d = b.Length;
 
 
+
+
+
                 if (c >= 4 && d >= 6)
                 {
                     
@@ -82,6 +106,10 @@ namespace trial_transportation
 
                     string path = @"D:\1-2\SWE4202\travel management\user.txt";
                     bool use = true;
+
+
+
+
                     foreach (string u in user)
                     {
                         if (u == userName)
@@ -91,6 +119,9 @@ namespace trial_transportation
                             break;
                         }
                     }
+
+
+
 
                     if (use == true)
                     {
@@ -109,47 +140,82 @@ namespace trial_transportation
 
 
                     }
+
+
+
                 }
 
 
                 else
                 {
+
+
+
                     MessageBox.Show("minimum 6 characters");
+
+
+
                 }
           
 
             
         }
 
+
+
+
+
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
+
         }
+
+
+
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+
+
+
         private void label5_Click(object sender, EventArgs e)
         {
 
         }
+
+
+
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
+
+
+
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
+
+
+
         private void label9_Click(object sender, EventArgs e)
         {
 
         }
+
+
+
+
     }
+
+
 
 }

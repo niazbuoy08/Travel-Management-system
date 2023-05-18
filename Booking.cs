@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace trial_transportation
 {
+
+
+
+
+
     public class Booking
     {
          
@@ -18,6 +23,11 @@ namespace trial_transportation
             public DateTime TravelDate { get; set; }
             public int SeatNumber { get; set; }
 
+
+
+
+
+
             public Booking(string name, string email, string phone, string from, string to, DateTime travelDate, int seatNumber)
             {
                 Name = name;
@@ -29,6 +39,14 @@ namespace trial_transportation
                 SeatNumber = seatNumber;
             }
 
+
+
+
+
         
     }
+
+
+
+
 }
