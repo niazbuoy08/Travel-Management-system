@@ -82,7 +82,7 @@ namespace trial_transportation
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            StreamReader s1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\Travel Management\Travel-Management-system\user.txt");
+            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\travel management\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
@@ -95,6 +95,16 @@ namespace trial_transportation
             }
 
             s1.Close();
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
 
         }
     }

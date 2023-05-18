@@ -32,7 +32,7 @@ namespace trial_transportation
            
 
 
-            StreamReader s1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\Travel Management\Travel-Management-system\user.txt");
+            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\travel management\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
@@ -80,7 +80,7 @@ namespace trial_transportation
                     
                    
 
-                    string path = @"C:\Users\User\OneDrive\Desktop\Travel Management\Travel-Management-system\user.txt";
+                    string path = @"D:\1-2\SWE4202\travel management\user.txt";
                     bool use = true;
                     foreach (string u in user)
                     {
@@ -127,6 +127,26 @@ namespace trial_transportation
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
