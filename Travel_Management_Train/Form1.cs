@@ -299,5 +299,10 @@ namespace Travel_Management_Train
                 txtamount.Text = string.Format("{0:C}", amount);
             }
         }
+
+        private void cmbfrom_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

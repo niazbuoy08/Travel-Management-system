@@ -227,6 +227,7 @@
             this.cmbfrom.Name = "cmbfrom";
             this.cmbfrom.Size = new System.Drawing.Size(296, 37);
             this.cmbfrom.TabIndex = 7;
+            this.cmbfrom.SelectedIndexChanged += new System.EventHandler(this.cmbfrom_SelectedIndexChanged);
             // 
             // label7
             // 
