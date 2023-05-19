@@ -35,7 +35,7 @@ namespace trial_transportation
 
 
 
-            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\project\user.txt");
+            StreamReader s1 = new StreamReader(@"C:\Users\USER\source\repos\Travel_Management_Train\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
@@ -104,7 +104,7 @@ namespace trial_transportation
                     
                    
 
-                    string path = @"D:\1-2\SWE4202\project\user.txt";
+                    string path = @"C:\Users\USER\source\repos\Travel_Management_Train\user.txt";
                     bool use = true;
 
 
