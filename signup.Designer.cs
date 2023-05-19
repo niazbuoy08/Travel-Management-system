@@ -235,7 +235,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.BackColor = System.Drawing.Color.SkyBlue;
             this.label10.Font = new System.Drawing.Font("Lucida Handwriting", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(461, 51);
             this.label10.Name = "label10";
@@ -248,7 +248,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = global::trial_transportation.Properties.Resources.blue_pastel_wallpaper_preview1;
+            this.BackgroundImage = global::trial_transportation.Properties.Resources.tumblr_oiwytz4dh41tf8vylo1_1280;
             this.ClientSize = new System.Drawing.Size(1238, 694);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);

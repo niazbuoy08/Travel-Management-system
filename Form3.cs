@@ -310,5 +310,16 @@ namespace trial_transportation
                 txtamount.Text = string.Format("{0:C}", amount);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+            
+            form2.Show();
+
+            
+            this.Hide();
+        }
     }
 }
