@@ -130,7 +130,7 @@ namespace trial_transportation
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            StreamReader s1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\New folder (2)\user.txt");
+            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\project\user.txt");
             string line = "";
 
 
