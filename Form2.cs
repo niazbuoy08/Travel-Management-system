@@ -106,6 +106,9 @@ namespace trial_transportation
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Plane p = new Plane();
+            p.Show();
+            this.Hide();
 
         }
     }

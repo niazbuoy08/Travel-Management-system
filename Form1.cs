@@ -130,7 +130,7 @@ namespace trial_transportation
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            StreamReader s1 = new StreamReader(@"C:\Users\USER\source\repos\Travel_Management_Train\user.txt");
+            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\project\Travel-Management-system\user.txt");
             string line = "";
 
 

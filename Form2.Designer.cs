@@ -50,10 +50,10 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button5.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
             this.button5.Font = new System.Drawing.Font("MS UI Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(274, 19);
+            this.button5.Location = new System.Drawing.Point(308, 24);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(67, 38);
+            this.button5.Size = new System.Drawing.Size(75, 48);
             this.button5.TabIndex = 11;
             this.button5.Text = "Exit";
             this.button5.UseVisualStyleBackColor = false;
@@ -64,10 +64,10 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button4.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(48, 427);
+            this.button4.Location = new System.Drawing.Point(54, 534);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 44);
+            this.button4.Size = new System.Drawing.Size(112, 55);
             this.button4.TabIndex = 10;
             this.button4.Text = "PLANE";
             this.button4.UseVisualStyleBackColor = false;
@@ -78,10 +78,10 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button3.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(48, 291);
+            this.button3.Location = new System.Drawing.Point(54, 364);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 40);
+            this.button3.Size = new System.Drawing.Size(112, 50);
             this.button3.TabIndex = 9;
             this.button3.Text = "TRAIN";
             this.button3.UseVisualStyleBackColor = false;
@@ -92,10 +92,10 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button1.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
             this.button1.Font = new System.Drawing.Font("MS PGothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(152, 19);
+            this.button1.Location = new System.Drawing.Point(171, 24);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 38);
+            this.button1.Size = new System.Drawing.Size(116, 48);
             this.button1.TabIndex = 7;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = false;
@@ -107,9 +107,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 28F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(668, 19);
+            this.label1.Location = new System.Drawing.Point(752, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 56);
+            this.label1.Size = new System.Drawing.Size(166, 67);
             this.label1.TabIndex = 6;
             this.label1.Text = "label 1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -119,10 +119,10 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button2.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(48, 157);
+            this.button2.Location = new System.Drawing.Point(54, 196);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 42);
+            this.button2.Size = new System.Drawing.Size(112, 52);
             this.button2.TabIndex = 8;
             this.button2.Text = "BUS";
             this.button2.UseVisualStyleBackColor = false;
@@ -133,10 +133,10 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button6.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
             this.button6.Font = new System.Drawing.Font("MS PGothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(20, 19);
+            this.button6.Location = new System.Drawing.Point(22, 24);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(102, 38);
+            this.button6.Size = new System.Drawing.Size(115, 48);
             this.button6.TabIndex = 12;
             this.button6.Text = "Profile";
             this.button6.UseVisualStyleBackColor = false;
@@ -146,9 +146,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(596, 263);
+            this.label2.Location = new System.Drawing.Point(670, 329);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 16);
+            this.label2.Size = new System.Drawing.Size(55, 20);
             this.label2.TabIndex = 13;
             this.label2.Text = "label 1";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -159,9 +159,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(42, 82);
+            this.label3.Location = new System.Drawing.Point(47, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(282, 37);
+            this.label3.Size = new System.Drawing.Size(331, 44);
             this.label3.TabIndex = 14;
             this.label3.Text = "Choose Your Transport";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -170,9 +170,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::trial_transportation.Properties.Resources.lala;
-            this.pictureBox1.Location = new System.Drawing.Point(189, 150);
+            this.pictureBox1.Location = new System.Drawing.Point(213, 188);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 80);
+            this.pictureBox1.Size = new System.Drawing.Size(152, 100);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -180,9 +181,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::trial_transportation.Properties.Resources.lulu2;
-            this.pictureBox2.Location = new System.Drawing.Point(189, 291);
+            this.pictureBox2.Location = new System.Drawing.Point(213, 364);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 81);
+            this.pictureBox2.Size = new System.Drawing.Size(152, 101);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -190,20 +192,21 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::trial_transportation.Properties.Resources.lili;
-            this.pictureBox3.Location = new System.Drawing.Point(189, 418);
+            this.pictureBox3.Location = new System.Drawing.Point(213, 522);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(135, 95);
+            this.pictureBox3.Size = new System.Drawing.Size(152, 119);
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
-            this.ClientSize = new System.Drawing.Size(1157, 638);
+            this.ClientSize = new System.Drawing.Size(1302, 798);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

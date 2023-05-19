@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,12 @@ namespace trial_transportation
 {
     public partial class signup : Form
     {
+        private PrintDocument printDocument;
         public signup()
         {
             InitializeComponent();
+            printDocument = new PrintDocument();
+            printDocument.PrintPage += PrintDocument_PrintPage;
         }
 
         List<string> user = new List<string>();
@@ -26,8 +30,36 @@ namespace trial_transportation
         {
 
         }
+        
+   
 
-        private void signup_Load(object sender, EventArgs e)
+            public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+            {
+                // This event is raised when a new page needs to be printed
+                // You can add your custom printing logic here
+
+                // Example: Print a simple text string
+                string text = "Hello, world!";
+                Font font = new Font("Arial", 12, FontStyle.Regular);
+                e.Graphics.DrawString(text, font, Brushes.Black, new PointF(50, 50));
+            }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            {
+                // Show the PrintDialog to select a printer and configure print settings
+                PrintDialog printDialog = new PrintDialog();
+                printDialog.Document = printDocument;
+
+                if (printDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Start the printing process
+                    printDocument.Print();
+                }
+            }
+        }
+
+    private void signup_Load(object sender, EventArgs e)
         {
            
 
@@ -35,7 +67,7 @@ namespace trial_transportation
 
 
 
-            StreamReader s1 = new StreamReader(@"C:\Users\USER\source\repos\Travel_Management_Train\user.txt");
+            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\project\Travel-Management-system\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
@@ -104,7 +136,7 @@ namespace trial_transportation
                     
                    
 
-                    string path = @"C:\Users\USER\source\repos\Travel_Management_Train\user.txt";
+                    string path = @"D:\1-2\SWE4202\project\Travel-Management-system\user.txt";
                     bool use = true;
 
 
@@ -211,9 +243,9 @@ namespace trial_transportation
 
         }
 
+      
 
-
-
+        
     }
 
 
