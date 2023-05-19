@@ -49,7 +49,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button5.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
-            this.button5.Font = new System.Drawing.Font("MS UI Gothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("MS UI Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(274, 19);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
@@ -71,6 +71,7 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "PLANE";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -90,7 +91,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button1.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
-            this.button1.Font = new System.Drawing.Font("MS PGothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("MS PGothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(152, 19);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
@@ -131,7 +132,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.button6.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
-            this.button6.Font = new System.Drawing.Font("MS PGothic", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("MS PGothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.Location = new System.Drawing.Point(20, 19);
             this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
@@ -139,6 +140,7 @@
             this.button6.TabIndex = 12;
             this.button6.Text = "Profile";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // label2
             // 
@@ -155,21 +157,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 16F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(254, 33);
+            this.label3.Size = new System.Drawing.Size(282, 37);
             this.label3.TabIndex = 14;
             this.label3.Text = "Choose Your Transport";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::trial_transportation.Properties.Resources.lala;
-            this.pictureBox1.Location = new System.Drawing.Point(196, 157);
+            this.pictureBox1.Location = new System.Drawing.Point(189, 150);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 61);
+            this.pictureBox1.Size = new System.Drawing.Size(135, 80);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -177,9 +180,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::trial_transportation.Properties.Resources.lulu2;
-            this.pictureBox2.Location = new System.Drawing.Point(196, 291);
+            this.pictureBox2.Location = new System.Drawing.Point(189, 291);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 70);
+            this.pictureBox2.Size = new System.Drawing.Size(135, 81);
             this.pictureBox2.TabIndex = 16;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -187,11 +190,12 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::trial_transportation.Properties.Resources.lili;
-            this.pictureBox3.Location = new System.Drawing.Point(196, 427);
+            this.pictureBox3.Location = new System.Drawing.Point(189, 418);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 68);
+            this.pictureBox3.Size = new System.Drawing.Size(135, 95);
             this.pictureBox3.TabIndex = 17;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Form2
             // 
