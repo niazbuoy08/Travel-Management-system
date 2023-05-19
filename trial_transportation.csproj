@@ -145,6 +145,8 @@
     <None Include="Resources\lili.jpg" />
     <None Include="Resources\pexels-anastasiya-vragova-67917412.jpg" />
     <None Include="Resources\PowerfulReasons_hero.jpg" />
+    <Content Include="Resources\Image1.jpg" />
+    <Content Include="Resources\Image2.jpg" />
     <Content Include="TextFile1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
