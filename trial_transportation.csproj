@@ -143,6 +143,7 @@
     <None Include="Resources\lulu1.jpg" />
     <None Include="Resources\lulu2.jpg" />
     <None Include="Resources\lili.jpg" />
+    <None Include="Resources\pexels-anastasiya-vragova-67917412.jpg" />
     <Content Include="TextFile1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
