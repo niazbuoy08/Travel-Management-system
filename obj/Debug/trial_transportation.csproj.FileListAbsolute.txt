@@ -117,3 +117,4 @@ D:\1-2\SWE4202\project\obj\Debug\trial_transportation.csproj.GenerateResource.ca
 D:\1-2\SWE4202\project\obj\Debug\trial_transportation.csproj.CoreCompileInputs.cache
 D:\1-2\SWE4202\project\obj\Debug\trial_transportation.exe
 D:\1-2\SWE4202\project\obj\Debug\trial_transportation.pdb
+C:\Users\USER\source\repos\Travel_Management_Train\obj\Debug\trial_transportation.Plane.resources
