@@ -303,6 +303,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PowerfulReasons_hero {
+            get {
+                object obj = ResourceManager.GetObject("PowerfulReasons_hero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap q {
             get {
                 object obj = ResourceManager.GetObject("q", resourceCulture);
