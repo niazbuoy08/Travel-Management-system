@@ -8,33 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Travel_Management_Train
+namespace trial_transportation
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnreset_Click(object sender, EventArgs e)
@@ -42,7 +22,7 @@ namespace Travel_Management_Train
             txtname.Clear();
             txtemail.Clear();
             txtphone.Clear();
-           
+
 
             cmbfrom.Text = "None";
             cmbto.Text = "None";
@@ -55,7 +35,7 @@ namespace Travel_Management_Train
 
         private void btntotal_Click(object sender, EventArgs e)
         {
-            Ticket_Price Travel_price = new Ticket_Price();
+            Ticket_price Travel_price = new Ticket_price();
             Class_price Seat_price = new Class_price();
             double[] Travelcost = new double[20];
             double[] Seatcost = new double[20];
@@ -69,14 +49,17 @@ namespace Travel_Management_Train
                 {
                     Seatcost[0] = Seat_price.Seat_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Seat Ac")
                 {
                     Seatcost[0] = Seat_price.Seat_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Non-Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Ac;
@@ -86,15 +69,17 @@ namespace Travel_Management_Train
 
                 if (cmbticket.Text == "1")
                 {
-                    amount = 1*amount;
+                    amount = 1 * amount;
                 }
+
                 else if (cmbticket.Text == "2")
                 {
-                    amount = 2*amount;
+                    amount = 2 * amount;
                 }
+
                 else if (cmbticket.Text == "3")
                 {
-                    amount = 3*amount;
+                    amount = 3 * amount;
                 }
 
                 txtamount.Text = string.Format("{0:C}", amount);
@@ -108,14 +93,17 @@ namespace Travel_Management_Train
                 {
                     Seatcost[0] = Seat_price.Seat_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Seat Ac")
                 {
                     Seatcost[0] = Seat_price.Seat_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Non-Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Ac;
@@ -128,10 +116,12 @@ namespace Travel_Management_Train
                 {
                     amount = 1 * amount;
                 }
+
                 else if (cmbticket.Text == "2")
                 {
                     amount = 2 * amount;
                 }
+
                 else if (cmbticket.Text == "3")
                 {
                     amount = 3 * amount;
@@ -148,14 +138,17 @@ namespace Travel_Management_Train
                 {
                     Seatcost[0] = Seat_price.Seat_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Seat Ac")
                 {
                     Seatcost[0] = Seat_price.Seat_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Non-Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Ac;
@@ -168,10 +161,12 @@ namespace Travel_Management_Train
                 {
                     amount = 1 * amount;
                 }
+
                 else if (cmbticket.Text == "2")
                 {
                     amount = 2 * amount;
                 }
+
                 else if (cmbticket.Text == "3")
                 {
                     amount = 3 * amount;
@@ -188,14 +183,17 @@ namespace Travel_Management_Train
                 {
                     Seatcost[0] = Seat_price.Seat_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Seat Ac")
                 {
                     Seatcost[0] = Seat_price.Seat_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Non-Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Ac;
@@ -208,10 +206,12 @@ namespace Travel_Management_Train
                 {
                     amount = 1 * amount;
                 }
+
                 else if (cmbticket.Text == "2")
                 {
                     amount = 2 * amount;
                 }
+
                 else if (cmbticket.Text == "3")
                 {
                     amount = 3 * amount;
@@ -228,14 +228,17 @@ namespace Travel_Management_Train
                 {
                     Seatcost[0] = Seat_price.Seat_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Seat Ac")
                 {
                     Seatcost[0] = Seat_price.Seat_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Non-Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Ac;
@@ -248,10 +251,12 @@ namespace Travel_Management_Train
                 {
                     amount = 1 * amount;
                 }
+
                 else if (cmbticket.Text == "2")
                 {
                     amount = 2 * amount;
                 }
+
                 else if (cmbticket.Text == "3")
                 {
                     amount = 3 * amount;
@@ -268,14 +273,17 @@ namespace Travel_Management_Train
                 {
                     Seatcost[0] = Seat_price.Seat_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Seat Ac")
                 {
                     Seatcost[0] = Seat_price.Seat_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Non-Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Non_Ac;
                 }
+
                 else if (cmbclass.Text == "Cabin Ac")
                 {
                     Seatcost[0] = Seat_price.Cabin_Ac;
@@ -284,13 +292,16 @@ namespace Travel_Management_Train
                 amount = Travelcost[0] + Seatcost[0];
 
                 if (cmbticket.Text == "1")
+
                 {
                     amount = 1 * amount;
                 }
+
                 else if (cmbticket.Text == "2")
                 {
                     amount = 2 * amount;
                 }
+
                 else if (cmbticket.Text == "3")
                 {
                     amount = 3 * amount;
@@ -298,16 +309,6 @@ namespace Travel_Management_Train
 
                 txtamount.Text = string.Format("{0:C}", amount);
             }
-        }
-
-        private void cmbfrom_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnadd_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

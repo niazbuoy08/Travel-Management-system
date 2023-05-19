@@ -73,6 +73,9 @@ namespace trial_transportation
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Form3 train = new Form3();
+            train.Show();
+            this.Hide();
 
         }
     }
