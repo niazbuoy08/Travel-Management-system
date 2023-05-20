@@ -123,7 +123,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::trial_transportation.Properties.Resources.shutterstock_623111885_1_scaled_phifxb7av8bl2lrxdes1syk43v9acwtvrveysd1ouo;
-            this.pictureBox2.Location = new System.Drawing.Point(1137, 34);
+            this.pictureBox2.Location = new System.Drawing.Point(1282, 49);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(154, 154);
             this.pictureBox2.TabIndex = 15;
@@ -134,7 +134,7 @@
             this.pictureBox1.Image = global::trial_transportation.Properties.Resources.water_landscape_in_bangladesh;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(369, 809);
+            this.pictureBox1.Size = new System.Drawing.Size(369, 1018);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -182,11 +182,12 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(779, 615);
+            this.label12.Location = new System.Drawing.Point(780, 615);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(110, 39);
             this.label12.TabIndex = 20;
             this.label12.Text = "Name";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label13
             // 
@@ -202,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1337, 810);
+            this.ClientSize = new System.Drawing.Size(1468, 1013);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);

@@ -62,8 +62,8 @@ namespace trial_transportation
                     phone.Add(components[1]);
 
                     nationality.Add(components[3]);
-                    gender.Add(components[4]);
-                    country.Add(components[5]);
+                    gender.Add(components[5]);
+                    country.Add(components[4]);
 
 
                     for (int i = 0; i < user.Count; i++)
@@ -106,6 +106,11 @@ namespace trial_transportation
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
         {
 
         }
