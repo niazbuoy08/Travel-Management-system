@@ -67,7 +67,7 @@ namespace trial_transportation
 
 
 
-            StreamReader s1 = new StreamReader(@"D:\1-2\SWE4202\project\Travel-Management-system\user.txt");
+            StreamReader s1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\New folder (5)\Travel-Management-system\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
@@ -136,7 +136,7 @@ namespace trial_transportation
                     
                    
 
-                    string path = @"D:\1-2\SWE4202\project\Travel-Management-system\user.txt";
+                    string path = @"C:\Users\User\OneDrive\Desktop\New folder (5)\Travel-Management-system\user.txt";
                     bool use = true;
 
 
