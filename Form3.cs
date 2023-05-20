@@ -25,6 +25,7 @@ namespace trial_transportation
         public static string fto = " ";
         public static string fdate = " ";
         public static string fclass = " ";
+        public static string famount = " ";
 
 
         private void btnreset_Click(object sender, EventArgs e)
@@ -516,6 +517,7 @@ namespace trial_transportation
             fto = cmbto.Text;
             fdate = travelDateTimePicker.Value.ToString();
             fclass = cmbclass.Text;
+            famount=txtamount.Text;
            
             trainticket ticket = new trainticket();
             ticket.Show();

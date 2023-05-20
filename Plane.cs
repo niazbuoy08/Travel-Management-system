@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,6 +30,7 @@ namespace trial_transportation
         public static string fclass = " ";
         public static string fflight = " ";
         public static string fseat = " ";
+        public static string famount = " ";
 
 
         private void Plane_Load(object sender, EventArgs e)
@@ -276,7 +278,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = Total.ToString();
+            total_text.Text = string.Format("{0:C}", total_text); ;
 
             if (cmbto.Text == "Chittagong")
             {
@@ -304,7 +306,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = Total.ToString();
+            total_text.Text = string.Format("{0:C}", total_text) ;
 
             if (cmbto.Text == "Barisal")
             {
@@ -332,7 +334,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = Total.ToString();
+            total_text.Text = string.Format("{0:C}", total_text);
 
             if (cmbto.Text == "Sylhet")
             {
@@ -360,7 +362,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = Total.ToString();
+            total_text.Text = string.Format("{0:C}", total_text);
 
             if (cmbto.Text == "Rajshahi")
 
@@ -389,7 +391,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = Total.ToString();
+            total_text.Text = string.Format("{0:C}", total_text);
         }
 
         private void lblTotal_Click(object sender, EventArgs e)
@@ -398,7 +400,7 @@ namespace trial_transportation
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   
             fname = name_text.Text;
             ffrom = cmbfrom.Text;
             fto = cmbto.Text;
@@ -406,6 +408,7 @@ namespace trial_transportation
             fclass = cmb_class.Text;
             fflight=cmb_flight.Text;
             fseat = cmb_seat.Text;
+            famount= total_text.Text;
             Planeticket ticket = new Planeticket();
             ticket.Show();
             this.Hide();

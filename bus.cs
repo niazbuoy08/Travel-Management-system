@@ -44,6 +44,7 @@ namespace trial_transportation
         public static string fffrom = " ";
         public static string ffto = " ";
         public static string ffdate = " ";
+        public static string ffamount = " ";
       /*  public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
           
@@ -84,6 +85,7 @@ namespace trial_transportation
                 fffrom = cmbfrom.Text;
                 ffto = cmbto.Text;
                 ffdate = travelDateTimePicker.Value.ToString();
+                ffamount=txtamount.Text;
                
                 busticket ticket = new busticket();
                 ticket.Show();

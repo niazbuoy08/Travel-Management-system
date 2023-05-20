@@ -30,12 +30,13 @@ namespace trial_transportation
             string to = label7.Text;
             string date = label8.Text;
             string seat=label15.Text;
+            string amount=label17.Text;
 
 
 
 
 
-            string print = "\n\n\n\n" + "\t\t" + "Go EaSy" + "\n\n\n" + "\t      " + "TICKET RECEIPT" + "\n\n\n" + "Name: " + name + "\n" + "From: " + from + "\n" + "To: " + to + "\n" + "Date: " + date + "\n" + "Class: " + Plane.fclass+"\n"+"Seat: "+seat;
+            string print = "\n\n\n\n" + "\t\t" + "Go EaSy" + "\n\n\n" + "\t      " + "TICKET RECEIPT" + "\n\n\n" + "Name: " + name + "\n" + "From: " + from + "\n" + "To: " + to + "\n" + "Date: " + date + "\n" + "Class: " + Plane.fclass+"\n"+"Seat: "+seat + "\n" + "Amount: " + Plane.famount;
             Font font = new Font("Times New Roman", 26, FontStyle.Regular);
             e.Graphics.DrawString(print, font, Brushes.Black, new PointF(50, 50));
 
@@ -96,6 +97,7 @@ namespace trial_transportation
             label11.Text = Plane.fclass;
             label13.Text = Plane.fflight;
             label15.Text = Plane.fseat;
+            label17.Text = Plane.famount;
         }
 
         private void button2_Click(object sender, EventArgs e)

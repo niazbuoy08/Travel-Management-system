@@ -30,13 +30,14 @@ namespace trial_transportation
             string from = label6.Text;
             string to = label7.Text;
             string date = label8.Text;
+            string amount=label11.Text;
            
 
 
 
 
 
-            string print = "\n\n\n\n" + "\t\t" + "Go EaSy" + "\n\n\n" + "\t      " + "TICKET RECEIPT" + "\n\n\n" + "Name: " + name + "\n" + "From: " + from + "\n" + "To: " + to + "\n" + "Date: " + date;
+            string print = "\n\n\n\n" + "\t\t" + "Go EaSy" + "\n\n\n" + "\t      " + "TICKET RECEIPT" + "\n\n\n" + "Name: " + name + "\n" + "From: " + from + "\n" + "To: " + to + "\n" + "Date: " + date + "\n" + "Amount: " + bus.ffamount;
             Font font = new Font("Times New Roman", 26, FontStyle.Regular);
             e.Graphics.DrawString(print, font, Brushes.Black, new PointF(50, 50));
 
@@ -156,7 +157,7 @@ namespace trial_transportation
             label6.Text = bus.fffrom;
             label7.Text = bus.ffto;
             label8.Text = bus.ffdate;
-         
+            label11.Text=bus.ffamount;
           
         }
 

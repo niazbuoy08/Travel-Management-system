@@ -47,13 +47,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button_Back = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(621, 797);
+            this.button1.Location = new System.Drawing.Point(622, 828);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 48);
             this.button1.TabIndex = 22;
@@ -174,7 +176,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(189, 797);
+            this.button2.Location = new System.Drawing.Point(205, 828);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 48);
             this.button2.TabIndex = 24;
@@ -215,7 +217,7 @@
             // 
             this.button_Back.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Back.Location = new System.Drawing.Point(189, 897);
+            this.button_Back.Location = new System.Drawing.Point(37, 897);
             this.button_Back.Name = "button_Back";
             this.button_Back.Size = new System.Drawing.Size(167, 48);
             this.button_Back.TabIndex = 28;
@@ -223,11 +225,33 @@
             this.button_Back.UseVisualStyleBackColor = false;
             this.button_Back.Click += new System.EventHandler(this.button_Back_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(546, 778);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(170, 37);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Amountlbl";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(294, 778);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(135, 37);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "Amount";
+            // 
             // trainticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1589, 957);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -273,5 +297,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button_Back;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
