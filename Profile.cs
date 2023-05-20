@@ -11,21 +11,30 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using static System.Windows.Forms.LinkLabel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace trial_transportation
 {
     public partial class Profile : Form
     {
-        
+
         public Profile()
         {
             InitializeComponent();
             label1.Text = "Welcome" + " " + Form1.instance.usern + "!";
-           
 
-         }
 
-       
+        }
+
+        string[] username = { "sheona", "athena" };
+        string[] password = { "123456", "654321" };
+        List<string> user = new List<string>();
+        List<string> name = new List<string>();
+        List<string> phone = new List<string>();
+        List<string> email = new List<string>();
+        List<string> nationality = new List<string>();
+        List<string> gender = new List<string>();
+        List<string> country = new List<string>();
 
 
 
@@ -35,7 +44,7 @@ namespace trial_transportation
         private void Profile_Load(object sender, EventArgs e)
         {
 
-            StreamReader pf1 = new StreamReader(@"D:\1-2\SWE4202\project\Travel-Management-system\user.txt");
+            StreamReader pf1 = new StreamReader(@"C:\Users\User\Downloads\project\Travel-Management-system\Travel-Management-system\user.txt");
             string line = "";
 
 
@@ -43,29 +52,42 @@ namespace trial_transportation
 
             while ((line = pf1.ReadLine()) != null)
             {
-                string[] components = line.Split(" ".ToCharArray());
-                string[] username = { "sheona", "athena" };
-                string[] password = { "123456", "654321" };
-                List<string> user = new List<string>();
-                List<string> name = new List<string>();
-                List<string> phone = new List<string>();
-                List<string> email = new List<string>();
-                List<string> nationality = new List<string>();
-                List<string> gender = new List<string>();
-                List<string> country = new List<string>();
-                foreach(String u in user)
+
                 if (line.Contains(Form1.instance.usern))
                 {
-                        if (components[6] == Form1.instance.usern)
-                    label8.Text= components[0];
-                        label9.Text=components[1];
-                        label10.Text = components[2];
-                        label11.Text = components[3];
-                        label12.Text = components[4];
-                        label13.Text = components[5];
+                    string[] components = line.Split(" ".ToCharArray());
+                    name.Add(components[0]);
+                    user.Add(components[6]);
+                    email.Add(components[2]);
+                    phone.Add(components[1]);
+
+                    nationality.Add(components[3]);
+                    gender.Add(components[4]);
+                    country.Add(components[5]);
+
+
+                    for (int i = 0; i < user.Count; i++)
+                    {
+                        if (user[i] == Form1.instance.usern)
+
+                        {
+                            label8.Text = name[i];
+                            label9.Text = phone[i];
+                            label10.Text = email[i];
+                            label11.Text = nationality[i];
+                            label12.Text = gender[i];
+                            label13.Text = country[i];
+                        }
+                    }
+
                 }
-               
+
+
+
             }
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)

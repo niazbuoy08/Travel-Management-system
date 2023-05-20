@@ -56,6 +56,7 @@
     </Compile>
     <Compile Include="class.cs" />
     <Compile Include="Class_price.cs" />
+    <Compile Include="FlightPrice.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +75,7 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="PClassPrice.cs" />
     <Compile Include="Plane.cs">
       <SubType>Form</SubType>
     </Compile>

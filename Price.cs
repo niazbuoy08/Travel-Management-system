@@ -14,11 +14,6 @@ namespace trial_transportation
         public double Sylhet = 1300;
         public double Rajshahi = 1100;
 
-        public double Business = 500;
-        public double Economy = 200;
-
-        public double USBangla = 100;
-        public double BimanBangladesh = 50;
-        public double NovoAir = 80;
+       
     }
 }
