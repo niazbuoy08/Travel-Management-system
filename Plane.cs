@@ -554,5 +554,10 @@ namespace trial_transportation
 
             cmb_seat.Text = "None";
         }
+
+        private void total_text_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

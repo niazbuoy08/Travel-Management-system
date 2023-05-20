@@ -55,6 +55,12 @@
     <Compile Include="bus.Designer.cs">
       <DependentUpon>bus.cs</DependentUpon>
     </Compile>
+    <Compile Include="busticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="busticket.Designer.cs">
+      <DependentUpon>busticket.cs</DependentUpon>
+    </Compile>
     <Compile Include="class.cs" />
     <Compile Include="Class_price.cs" />
     <Compile Include="FlightPrice.cs" />
@@ -108,6 +114,9 @@
     <Compile Include="Ticket_price2.cs" />
     <EmbeddedResource Include="bus.resx">
       <DependentUpon>bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="busticket.resx">
+      <DependentUpon>busticket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -179,6 +188,8 @@
     <None Include="Resources\newimage.jpg" />
     <None Include="Resources\picccc.jpg" />
     <None Include="Resources\pic.jpg" />
+    <None Include="Resources\travel.jpg" />
+    <None Include="Resources\travel1.jpg" />
     <Content Include="TextFile1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

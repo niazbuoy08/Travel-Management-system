@@ -413,6 +413,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap travel {
+            get {
+                object obj = ResourceManager.GetObject("travel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap travel_themes {
             get {
                 object obj = ResourceManager.GetObject("travel-themes", resourceCulture);
@@ -436,6 +446,16 @@ namespace trial_transportation.Properties {
         internal static System.Drawing.Bitmap travel_themes11 {
             get {
                 object obj = ResourceManager.GetObject("travel-themes11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap travel1 {
+            get {
+                object obj = ResourceManager.GetObject("travel1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

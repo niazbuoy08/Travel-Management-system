@@ -35,12 +35,16 @@ namespace trial_transportation
         {
             InitializeComponent();
             bookings = new List<Booking>();
-            printDocument = new PrintDocument();
-            printDocument.PrintPage += PrintDocument_PrintPage;
+          //  printDocument = new PrintDocument();
+          //  printDocument.PrintPage += PrintDocument_PrintPage;
             
         }
 
-        public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        public static string fname = " ";
+        public static string ffrom = " ";
+        public static string fto = " ";
+        public static string fdate = " ";
+      /*  public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
           
             string name = this.txtname.Text;
@@ -56,23 +60,35 @@ namespace trial_transportation
            
            
         }
+      */
 
         private void button3_Click_1(object sender, EventArgs e)
         {
             {
-                
-                PrintDialog printDialog = new PrintDialog();
-                printDialog.Document = printDocument;
 
-                if (printDialog.ShowDialog() == DialogResult.OK)
-                {
-                    
-                    printDocument.Print();
-                }
+                /* PrintDialog printDialog = new PrintDialog();
+                 printDialog.Document = printDocument;
 
-                PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
-                printPreviewDialog.Document = printDocument;
-                printPreviewDialog.ShowDialog();
+                 if (printDialog.ShowDialog() == DialogResult.OK)
+                 {
+
+                     printDocument.Print();
+                 }
+
+                 PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+                 printPreviewDialog.Document = printDocument;
+                 printPreviewDialog.ShowDialog();
+                */
+
+                fname = txtname.Text;
+                ffrom = cmbfrom.Text;
+                fto = cmbto.Text;
+                fdate = travelDateTimePicker.Value.ToString();
+               
+                busticket ticket = new busticket();
+                ticket.Show();
+                this.Hide();
+
             }
         }
 
