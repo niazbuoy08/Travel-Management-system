@@ -487,15 +487,15 @@ namespace trial_transportation
 
             string phone = contact_text.Text;
 
-            string From = cmbfrom.SelectedItem.ToString();
+            string from = cmbfrom.SelectedItem.ToString();
 
-            string To = cmbto.SelectedItem.ToString();
+            string to = cmbto.SelectedItem.ToString();
 
             DateTime travelDate = travelDateTimePicker.Value.Date;
 
             string seatNumber = cmb_seat.SelectedItem.ToString();
 
-            string seatclass = cmb_class.SelectedItem.ToString();
+            string seatClass = cmb_class.SelectedItem.ToString();
 
             foreach (Booking3 booking in bookings)
             {
@@ -506,9 +506,9 @@ namespace trial_transportation
                 }
             }
 
-            Booking3 newBooking = new Booking3(name, email, phone, From, To, travelDate, seatclass, seatclass);
-            bookings.Add(newBooking);
+            Booking3 newBooking = new Booking3(name, email, phone, from, to, travelDate, seatNumber, seatClass);
 
+            bookings.Add(newBooking);
 
             string bookingDetails = $"{newBooking.Name}, {newBooking.Email}, {newBooking.Contact}, {newBooking.From}, {newBooking.To}, {newBooking.TravelDate.ToShortDateString()}, Seat {newBooking.SeatClass}";
             listBox.Items.Add(bookingDetails);
