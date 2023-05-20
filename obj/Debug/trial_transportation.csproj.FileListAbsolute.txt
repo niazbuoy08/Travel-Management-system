@@ -152,3 +152,4 @@ D:\1-2\SWE4202\travel management\Travel-Management-system\obj\Debug\trial_transp
 D:\1-2\SWE4202\travel management\Travel-Management-system\obj\Debug\trial_transportation.csproj.CoreCompileInputs.cache
 D:\1-2\SWE4202\travel management\Travel-Management-system\obj\Debug\trial_transportation.exe
 D:\1-2\SWE4202\travel management\Travel-Management-system\obj\Debug\trial_transportation.pdb
+D:\1-2\SWE4202\travel management\Travel-Management-system\obj\Debug\trial_transportation.Profile.resources

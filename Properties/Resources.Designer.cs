@@ -323,6 +323,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap shutterstock_623111885_1_scaled_phifxb7av8bl2lrxdes1syk43v9acwtvrveysd1ouo {
+            get {
+                object obj = ResourceManager.GetObject("shutterstock_623111885-1-scaled-phifxb7av8bl2lrxdes1syk43v9acwtvrveysd1ouo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shutterstock_626627045_960 {
             get {
                 object obj = ResourceManager.GetObject("shutterstock_626627045-960", resourceCulture);
@@ -366,6 +376,16 @@ namespace trial_transportation.Properties {
         internal static System.Drawing.Bitmap tumblr_oiwytz4dh41tf8vylo1_1280 {
             get {
                 object obj = ResourceManager.GetObject("tumblr_oiwytz4dh41tf8vylo1_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap water_landscape_in_bangladesh {
+            get {
+                object obj = ResourceManager.GetObject("water-landscape-in-bangladesh", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

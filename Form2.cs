@@ -96,6 +96,9 @@ namespace trial_transportation
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Profile pf = new Profile();
+            pf.Show();
+            this.Hide();
 
         }
 
@@ -109,6 +112,11 @@ namespace trial_transportation
             Plane p = new Plane();
             p.Show();
             this.Hide();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
