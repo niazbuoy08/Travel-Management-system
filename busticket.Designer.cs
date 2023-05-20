@@ -194,9 +194,9 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(493, 120);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(295, 64);
+            this.label12.Size = new System.Drawing.Size(257, 64);
             this.label12.TabIndex = 45;
-            this.label12.Text = "Go EaSYy";
+            this.label12.Text = "Go EaSy";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // pictureBox1
