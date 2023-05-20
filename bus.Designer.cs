@@ -55,6 +55,7 @@
             this.printDocument3 = new System.Drawing.Printing.PrintDocument();
             this.printDocument4 = new System.Drawing.Printing.PrintDocument();
             this.printDocument5 = new System.Drawing.Printing.PrintDocument();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.seatNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,7 +95,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(48, 363);
+            this.label7.Location = new System.Drawing.Point(52, 320);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 25);
             this.label7.TabIndex = 53;
@@ -102,7 +103,7 @@
             // 
             // travelDateTimePicker
             // 
-            this.travelDateTimePicker.Location = new System.Drawing.Point(282, 366);
+            this.travelDateTimePicker.Location = new System.Drawing.Point(281, 322);
             this.travelDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.travelDateTimePicker.Name = "travelDateTimePicker";
             this.travelDateTimePicker.Size = new System.Drawing.Size(254, 22);
@@ -150,7 +151,7 @@
             "Syhlet",
             "Rajshahi",
             "Khulna"});
-            this.comboBox2.Location = new System.Drawing.Point(282, 298);
+            this.comboBox2.Location = new System.Drawing.Point(281, 272);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(254, 24);
@@ -166,7 +167,7 @@
             "Syhlet",
             "Rajshahi",
             "Khulna"});
-            this.comboBox1.Location = new System.Drawing.Point(283, 233);
+            this.comboBox1.Location = new System.Drawing.Point(283, 213);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(254, 24);
@@ -202,7 +203,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(52, 297);
+            this.label5.Location = new System.Drawing.Point(52, 268);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 25);
             this.label5.TabIndex = 43;
@@ -213,7 +214,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(52, 232);
+            this.label4.Location = new System.Drawing.Point(52, 209);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 25);
             this.label4.TabIndex = 42;
@@ -287,13 +288,25 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.GrayText;
+            this.button4.Location = new System.Drawing.Point(326, 511);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(152, 30);
+            this.button4.TabIndex = 59;
+            this.button4.Text = "Amount";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // bus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1244, 550);
+            this.ClientSize = new System.Drawing.Size(1310, 641);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.seatNumericUpDown);
@@ -352,5 +365,6 @@
         private System.Drawing.Printing.PrintDocument printDocument3;
         private System.Drawing.Printing.PrintDocument printDocument4;
         private System.Drawing.Printing.PrintDocument printDocument5;
+        private System.Windows.Forms.Button button4;
     }
 }

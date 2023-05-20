@@ -166,7 +166,7 @@ namespace trial_transportation
 
                         File.AppendAllText(path, "\n");
 
-                        Form2 f1 = new Form2();
+                        Form1 f1 = new Form1();
                         f1.Show();
                         this.Hide();
 
