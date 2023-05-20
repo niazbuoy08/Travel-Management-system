@@ -36,22 +36,19 @@ namespace trial_transportation
             bookings = new List<Booking>();
             printDocument = new PrintDocument();
             printDocument.PrintPage += PrintDocument_PrintPage;
-            //printPreviewControl.Document = printDocument;
+            
         }
 
         public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
-            // This event is raised when a new page needs to be printed
-            // You can add your custom printing logic here
-
-            // Example: Print a simple text string
+          
             string name = nameTextBox.Text;
             string email = emailTextBox.Text;
             string phone = phoneTextBox.Text;
             string From = comboBox1.SelectedItem.ToString();
             string To = comboBox2.SelectedItem.ToString();
             DateTime travelDate = travelDateTimePicker.Value.Date;
-          //  string seatNumber = seatNumericUpDown.Value;
+      
       string print= "\t" + "\t" + "TICKET RECEIPT" +"\n" + "Name: "+ name+ " " + "\n" + "Email: " + email + "\n" + "Phone: " + phone + "\n" + "From: " +  From + "\n" + "To: " + To+ "\n"  + "Date: " + travelDate;
             Font font = new Font("Times New Roman", 12, FontStyle.Regular);
             e.Graphics.DrawString( print, font, Brushes.Black, new PointF(50, 50));
@@ -62,13 +59,13 @@ namespace trial_transportation
         private void button3_Click_1(object sender, EventArgs e)
         {
             {
-                // Show the PrintDialog to select a printer and configure print settings
+                
                 PrintDialog printDialog = new PrintDialog();
                 printDialog.Document = printDocument;
 
                 if (printDialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Start the printing process
+                    
                     printDocument.Print();
                 }
 

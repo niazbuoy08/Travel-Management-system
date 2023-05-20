@@ -22,7 +22,7 @@ namespace trial_transportation
             public string To { get; set; }
             public DateTime TravelDate { get; set; }
             public int SeatNumber { get; set; }
-
+            
 
 
 
@@ -37,6 +37,7 @@ namespace trial_transportation
                 To = to;
                 TravelDate = travelDate;
                 SeatNumber = seatNumber;
+                
             }
 
 

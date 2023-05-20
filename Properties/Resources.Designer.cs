@@ -113,6 +113,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5841788204_42fcfaa708_z {
+            get {
+                object obj = ResourceManager.GetObject("5841788204_42fcfaa708_z", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap blue_pastel_wallpaper_preview {
             get {
                 object obj = ResourceManager.GetObject("blue-pastel-wallpaper-preview", resourceCulture);
@@ -126,6 +136,16 @@ namespace trial_transportation.Properties {
         internal static System.Drawing.Bitmap blue_pastel_wallpaper_preview1 {
             get {
                 object obj = ResourceManager.GetObject("blue-pastel-wallpaper-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blue_train {
+            get {
+                object obj = ResourceManager.GetObject("blue-train", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
