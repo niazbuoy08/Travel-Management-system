@@ -34,13 +34,13 @@
             this.listBox = new System.Windows.Forms.ListBox();
             this.flight = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.seat = new System.Windows.Forms.ComboBox();
-            this.cmbclass = new System.Windows.Forms.ComboBox();
-            this.To = new System.Windows.Forms.ComboBox();
-            this.From = new System.Windows.Forms.ComboBox();
-            this.contact = new System.Windows.Forms.TextBox();
-            this.email = new System.Windows.Forms.TextBox();
-            this.name = new System.Windows.Forms.TextBox();
+            this.cmb_seat = new System.Windows.Forms.ComboBox();
+            this.cmb_class = new System.Windows.Forms.ComboBox();
+            this.cmbto = new System.Windows.Forms.ComboBox();
+            this.cmbfrom = new System.Windows.Forms.ComboBox();
+            this.contact_text = new System.Windows.Forms.TextBox();
+            this.email_text = new System.Windows.Forms.TextBox();
+            this.name_text = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,8 +51,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.travelDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTotal
@@ -74,7 +76,7 @@
             this.Total.Location = new System.Drawing.Point(996, 557);
             this.Total.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(94, 32);
+            this.Total.Size = new System.Drawing.Size(94, 43);
             this.Total.TabIndex = 52;
             this.Total.Text = "Total";
             this.Total.UseVisualStyleBackColor = false;
@@ -85,7 +87,7 @@
             this.button1.BackColor = System.Drawing.Color.Navy;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1032, 615);
+            this.button1.Location = new System.Drawing.Point(1016, 659);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(243, 28);
@@ -133,119 +135,107 @@
             this.label11.Text = "Flight:";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
-            // seat
+            // cmb_seat
             // 
-            this.seat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seat.FormattingEnabled = true;
-            this.seat.Items.AddRange(new object[] {
+            this.cmb_seat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_seat.FormattingEnabled = true;
+            this.cmb_seat.Items.AddRange(new object[] {
             "A1",
             "A2",
             "A3",
-            "A4",
             "B1",
             "B2",
             "B3",
-            "B4",
             "C1",
             "C2",
             "C3",
-            "C4",
             "D1",
             "D2",
-            "D3",
-            "D4",
-            "E1",
-            "E2",
-            "E3",
-            "E4",
-            "F1",
-            "F2",
-            "F3",
-            "F4"});
-            this.seat.Location = new System.Drawing.Point(630, 386);
-            this.seat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.seat.Name = "seat";
-            this.seat.Size = new System.Drawing.Size(302, 33);
-            this.seat.TabIndex = 46;
-            this.seat.SelectedIndexChanged += new System.EventHandler(this.seat_SelectedIndexChanged);
+            "D3"});
+            this.cmb_seat.Location = new System.Drawing.Point(630, 386);
+            this.cmb_seat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_seat.Name = "cmb_seat";
+            this.cmb_seat.Size = new System.Drawing.Size(302, 33);
+            this.cmb_seat.TabIndex = 46;
+            this.cmb_seat.SelectedIndexChanged += new System.EventHandler(this.seat_SelectedIndexChanged);
             // 
-            // cmbclass
+            // cmb_class
             // 
-            this.cmbclass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbclass.FormattingEnabled = true;
-            this.cmbclass.Items.AddRange(new object[] {
+            this.cmb_class.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmb_class.FormattingEnabled = true;
+            this.cmb_class.Items.AddRange(new object[] {
             "Business ",
             "Economy"});
-            this.cmbclass.Location = new System.Drawing.Point(630, 281);
-            this.cmbclass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbclass.Name = "cmbclass";
-            this.cmbclass.Size = new System.Drawing.Size(302, 33);
-            this.cmbclass.TabIndex = 45;
-            this.cmbclass.SelectedIndexChanged += new System.EventHandler(this.cmbclass_SelectedIndexChanged);
+            this.cmb_class.Location = new System.Drawing.Point(630, 281);
+            this.cmb_class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmb_class.Name = "cmb_class";
+            this.cmb_class.Size = new System.Drawing.Size(302, 33);
+            this.cmb_class.TabIndex = 45;
+            this.cmb_class.SelectedIndexChanged += new System.EventHandler(this.cmbclass_SelectedIndexChanged);
             // 
-            // To
+            // cmbto
             // 
-            this.To.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.To.FormattingEnabled = true;
-            this.To.Items.AddRange(new object[] {
+            this.cmbto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbto.FormattingEnabled = true;
+            this.cmbto.Items.AddRange(new object[] {
             "Chittagong",
             "Dhaka",
             "Barisal",
             "Sylhet",
             "Rajshahi"});
-            this.To.Location = new System.Drawing.Point(175, 529);
-            this.To.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.To.Name = "To";
-            this.To.Size = new System.Drawing.Size(292, 33);
-            this.To.TabIndex = 44;
-            this.To.SelectedIndexChanged += new System.EventHandler(this.To_SelectedIndexChanged);
+            this.cmbto.Location = new System.Drawing.Point(175, 529);
+            this.cmbto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbto.Name = "cmbto";
+            this.cmbto.Size = new System.Drawing.Size(292, 33);
+            this.cmbto.TabIndex = 44;
+            this.cmbto.SelectedIndexChanged += new System.EventHandler(this.To_SelectedIndexChanged);
             // 
-            // From
+            // cmbfrom
             // 
-            this.From.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.From.FormattingEnabled = true;
-            this.From.Items.AddRange(new object[] {
+            this.cmbfrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbfrom.FormattingEnabled = true;
+            this.cmbfrom.Items.AddRange(new object[] {
             "Chittagong",
             "Dhaka",
             "Barisal",
             "Sylhet",
             "Rajshahi"});
-            this.From.Location = new System.Drawing.Point(175, 468);
-            this.From.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.From.Name = "From";
-            this.From.Size = new System.Drawing.Size(292, 33);
-            this.From.TabIndex = 43;
-            this.From.SelectedIndexChanged += new System.EventHandler(this.From_SelectedIndexChanged);
+            this.cmbfrom.Location = new System.Drawing.Point(175, 468);
+            this.cmbfrom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbfrom.Name = "cmbfrom";
+            this.cmbfrom.Size = new System.Drawing.Size(292, 33);
+            this.cmbfrom.TabIndex = 43;
+            this.cmbfrom.SelectedIndexChanged += new System.EventHandler(this.From_SelectedIndexChanged);
             // 
-            // contact
+            // contact_text
             // 
-            this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact.Location = new System.Drawing.Point(175, 401);
-            this.contact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.contact.Name = "contact";
-            this.contact.Size = new System.Drawing.Size(292, 30);
-            this.contact.TabIndex = 42;
-            this.contact.TextChanged += new System.EventHandler(this.contact_TextChanged);
+            this.contact_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact_text.Location = new System.Drawing.Point(175, 401);
+            this.contact_text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.contact_text.Name = "contact_text";
+            this.contact_text.Size = new System.Drawing.Size(292, 30);
+            this.contact_text.TabIndex = 42;
+            this.contact_text.TextChanged += new System.EventHandler(this.contact_TextChanged);
             // 
-            // email
+            // email_text
             // 
-            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.Location = new System.Drawing.Point(175, 333);
-            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(292, 30);
-            this.email.TabIndex = 41;
-            this.email.TextChanged += new System.EventHandler(this.email_TextChanged);
+            this.email_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email_text.Location = new System.Drawing.Point(175, 333);
+            this.email_text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.email_text.Name = "email_text";
+            this.email_text.Size = new System.Drawing.Size(292, 30);
+            this.email_text.TabIndex = 41;
+            this.email_text.TextChanged += new System.EventHandler(this.email_TextChanged);
             // 
-            // name
+            // name_text
             // 
-            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.Location = new System.Drawing.Point(175, 280);
-            this.name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(292, 30);
-            this.name.TabIndex = 40;
-            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
+            this.name_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_text.Location = new System.Drawing.Point(175, 280);
+            this.name_text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.name_text.Name = "name_text";
+            this.name_text.Size = new System.Drawing.Size(292, 30);
+            this.name_text.TabIndex = 40;
+            this.name_text.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // label10
             // 
@@ -377,15 +367,15 @@
             this.label1.Text = "Go EaSy";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // dateTimePicker1
+            // travelDateTimePicker
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(630, 470);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(302, 28);
-            this.dateTimePicker1.TabIndex = 54;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.travelDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.travelDateTimePicker.Location = new System.Drawing.Point(630, 470);
+            this.travelDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.travelDateTimePicker.Name = "travelDateTimePicker";
+            this.travelDateTimePicker.Size = new System.Drawing.Size(302, 28);
+            this.travelDateTimePicker.TabIndex = 54;
+            this.travelDateTimePicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button2
             // 
@@ -401,6 +391,33 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Navy;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(630, 562);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(96, 38);
+            this.button3.TabIndex = 56;
+            this.button3.Text = "Add";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Navy;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(822, 557);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(94, 43);
+            this.button4.TabIndex = 57;
+            this.button4.Text = "Reset";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // Plane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -408,21 +425,23 @@
             this.BackgroundImage = global::trial_transportation.Properties.Resources.newimage;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1525, 820);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.travelDateTimePicker);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.Total);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.flight);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.seat);
-            this.Controls.Add(this.cmbclass);
-            this.Controls.Add(this.To);
-            this.Controls.Add(this.From);
-            this.Controls.Add(this.contact);
-            this.Controls.Add(this.email);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.cmb_seat);
+            this.Controls.Add(this.cmb_class);
+            this.Controls.Add(this.cmbto);
+            this.Controls.Add(this.cmbfrom);
+            this.Controls.Add(this.contact_text);
+            this.Controls.Add(this.email_text);
+            this.Controls.Add(this.name_text);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -450,13 +469,13 @@
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.ComboBox flight;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox seat;
-        private System.Windows.Forms.ComboBox cmbclass;
-        private System.Windows.Forms.ComboBox To;
-        private System.Windows.Forms.ComboBox From;
-        private System.Windows.Forms.TextBox contact;
-        private System.Windows.Forms.TextBox email;
-        private System.Windows.Forms.TextBox name;
+        private System.Windows.Forms.ComboBox cmb_seat;
+        private System.Windows.Forms.ComboBox cmb_class;
+        private System.Windows.Forms.ComboBox cmbto;
+        private System.Windows.Forms.ComboBox cmbfrom;
+        private System.Windows.Forms.TextBox contact_text;
+        private System.Windows.Forms.TextBox email_text;
+        private System.Windows.Forms.TextBox name_text;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -467,7 +486,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker travelDateTimePicker;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

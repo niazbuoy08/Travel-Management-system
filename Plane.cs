@@ -8,14 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace trial_transportation
 {
     public partial class Plane : Form
     {
+        private List<Booking3> bookings;
         public Plane()
         {
             InitializeComponent();
+            bookings = new List<Booking3>();
         }
 
         private void Plane_Load(object sender, EventArgs e)
@@ -29,7 +32,7 @@ namespace trial_transportation
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            listBox.Items.Add(seat.Text + "              " + 1400 + "              " + cmbclass.Text);
+            listBox.Items.Add(cmb_seat.Text + "              " + 1400 + "              " + cmb_class.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,14 +44,14 @@ namespace trial_transportation
             double[] Classcost = new double[30];
             double[] Flightcost = new double[30];
             double Total;
-            if (To.Text == "Dhaka")
+            if (cmbto.Text == "Dhaka")
             {
                 Travelcost[0] = TravelPrice.Dhaka;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -67,14 +70,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Chittagong")
+            if (cmbto.Text == "Chittagong")
             {
                 Travelcost[0] = TravelPrice.Chittagong;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -93,14 +96,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Barisal")
+            if (cmbto.Text == "Barisal")
             {
                 Travelcost[0] = TravelPrice.Barisal;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -119,14 +122,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Sylhet")
+            if (cmbto.Text == "Sylhet")
             {
                 Travelcost[0] = TravelPrice.Sylhet;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -145,14 +148,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Rajshahi")
+            if (cmbto.Text == "Rajshahi")
             {
                 Travelcost[0] = TravelPrice.Rajshahi;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -211,14 +214,14 @@ namespace trial_transportation
             double[] Classcost = new double[30];
             double[] Flightcost = new double[30];
             double Total;
-            if (To.Text == "Dhaka")
+            if (cmbto.Text == "Dhaka")
             {
                 Travelcost[0] = TravelPrice.Dhaka;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -237,14 +240,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Chittagong")
+            if (cmbto.Text == "Chittagong")
             {
                 Travelcost[0] = TravelPrice.Chittagong;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -263,14 +266,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Barisal")
+            if (cmbto.Text == "Barisal")
             {
                 Travelcost[0] = TravelPrice.Barisal;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -289,14 +292,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Sylhet")
+            if (cmbto.Text == "Sylhet")
             {
                 Travelcost[0] = TravelPrice.Sylhet;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -315,14 +318,14 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
             lblTotal.Text = Total.ToString();
-            if (To.Text == "Rajshahi")
+            if (cmbto.Text == "Rajshahi")
             {
                 Travelcost[0] = TravelPrice.Rajshahi;
-                if (cmbclass.Text == "Business")
+                if (cmb_class.Text == "Business")
                 {
                     Classcost[0] = CPrice.Business;
                 }
-                else if (cmbclass.Text == "Economy")
+                else if (cmb_class.Text == "Economy")
                 {
                     Classcost[0] = CPrice.Economy;
                 }
@@ -435,6 +438,36 @@ namespace trial_transportation
 
         private void label9_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            string name = name_text.Text;
+            string email = email_text.Text;
+            string phone = contact_text.Text;
+            string From = cmbfrom.SelectedItem.ToString();
+            string To = cmbto.SelectedItem.ToString();
+            DateTime travelDate = travelDateTimePicker.Value.Date;
+            string seatNumber = cmb_seat.SelectedItem.ToString();
+            string seatclass = cmb_class.SelectedItem.ToString();
+
+            foreach (Booking3 booking in bookings)
+            {
+                if (booking.TravelDate == travelDate && booking.SeatNumber == seatNumber)
+                {
+                    MessageBox.Show("This seat has already been booked for the selected date. Please choose another seat or date.");
+                    return;
+                }
+            }
+
+            Booking3 newBooking = new Booking3(name, email, phone, From, To, travelDate, seatclass, seatclass);
+            bookings.Add(newBooking);
+
+
+            string bookingDetails = $"{newBooking.Name}, {newBooking.Email}, {newBooking.Contact}, {newBooking.From}, {newBooking.To}, {newBooking.TravelDate.ToShortDateString()}, Seat {newBooking.SeatClass}";
+            listBox.Items.Add(bookingDetails);
 
         }
     }
