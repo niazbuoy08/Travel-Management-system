@@ -20,6 +20,13 @@ namespace trial_transportation
             bookings = new List<Booking2>();
         }
 
+        public static string fname = " ";
+        public static string ffrom = " ";
+        public static string fto = " ";
+        public static string fdate = " ";
+        public static string fclass = " ";
+
+
         private void btnreset_Click(object sender, EventArgs e)
         {
             txtname.Clear();
@@ -499,6 +506,20 @@ namespace trial_transportation
             cmbclass.Text = "None";
 
             txtamount.Text = "None";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            fname = txtname.Text;
+            ffrom = cmbfrom.Text;
+            fto = cmbto.Text;
+            fdate = travelDateTimePicker.Value.ToString();
+            fclass = cmbclass.Text;
+           
+            trainticket ticket = new trainticket();
+            ticket.Show();
+            this.Hide();
         }
     }
 }
