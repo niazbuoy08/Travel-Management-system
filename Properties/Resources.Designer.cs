@@ -463,6 +463,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap travel2 {
+            get {
+                object obj = ResourceManager.GetObject("travel2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tumblr_oiwytz4dh41tf8vylo1_1280 {
             get {
                 object obj = ResourceManager.GetObject("tumblr_oiwytz4dh41tf8vylo1_1280", resourceCulture);
