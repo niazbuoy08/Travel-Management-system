@@ -54,9 +54,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -69,9 +71,9 @@
             this.panel3.Controls.Add(this.label);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Location = new System.Drawing.Point(711, 47);
+            this.panel3.Location = new System.Drawing.Point(703, 133);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(521, 202);
+            this.panel3.Size = new System.Drawing.Size(498, 202);
             this.panel3.TabIndex = 17;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -170,9 +172,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtname);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(14, 47);
+            this.panel1.Location = new System.Drawing.Point(14, 133);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(437, 218);
+            this.panel1.Size = new System.Drawing.Size(437, 202);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -243,7 +245,7 @@
             // 
             this.button_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_back.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button_back.Location = new System.Drawing.Point(14, 620);
+            this.button_back.Location = new System.Drawing.Point(12, 674);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(155, 36);
             this.button_back.TabIndex = 18;
@@ -262,9 +264,9 @@
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Location = new System.Drawing.Point(14, 320);
+            this.panel4.Location = new System.Drawing.Point(14, 368);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(434, 276);
+            this.panel4.Size = new System.Drawing.Size(434, 269);
             this.panel4.TabIndex = 19;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -369,10 +371,20 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(714, 290);
+            this.listBox1.Location = new System.Drawing.Point(703, 368);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(518, 372);
+            this.listBox1.Size = new System.Drawing.Size(498, 324);
             this.listBox1.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::trial_transportation.Properties.Resources.pic;
+            this.pictureBox1.Location = new System.Drawing.Point(508, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 134);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
@@ -380,7 +392,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::trial_transportation.Properties.Resources._5841788204_42fcfaa708_z;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1290, 732);
+            this.ClientSize = new System.Drawing.Size(1224, 722);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.button_back);
@@ -395,6 +408,7 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -427,5 +441,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker travelDateTimePicker;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
