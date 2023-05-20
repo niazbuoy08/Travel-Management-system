@@ -31,9 +31,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtamount = new System.Windows.Forms.Label();
             this.btntotal = new System.Windows.Forms.Button();
+            this.cmbclass = new System.Windows.Forms.ComboBox();
             this.cmbticket = new System.Windows.Forms.ComboBox();
             this.label = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txtphone = new System.Windows.Forms.TextBox();
@@ -43,20 +45,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button_back = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.travelDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.cmbto = new System.Windows.Forms.ComboBox();
             this.cmbfrom = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.travelDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -64,14 +66,14 @@
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.txtamount);
             this.panel3.Controls.Add(this.btntotal);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.cmbclass);
             this.panel3.Controls.Add(this.cmbticket);
             this.panel3.Controls.Add(this.label);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.label12);
-            this.panel3.Location = new System.Drawing.Point(711, 47);
+            this.panel3.Location = new System.Drawing.Point(703, 133);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(521, 202);
+            this.panel3.Size = new System.Drawing.Size(498, 202);
             this.panel3.TabIndex = 17;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -97,6 +99,20 @@
             this.btntotal.Text = "Total";
             this.btntotal.UseVisualStyleBackColor = true;
             this.btntotal.Click += new System.EventHandler(this.btntotal_Click);
+            // 
+            // cmbclass
+            // 
+            this.cmbclass.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbclass.FormattingEnabled = true;
+            this.cmbclass.Items.AddRange(new object[] {
+            "Seat Ac",
+            "Seat Non-Ac",
+            "Cabin Ac",
+            "Cabin Non-Ac"});
+            this.cmbclass.Location = new System.Drawing.Point(178, 9);
+            this.cmbclass.Name = "cmbclass";
+            this.cmbclass.Size = new System.Drawing.Size(276, 37);
+            this.cmbclass.TabIndex = 10;
             // 
             // cmbticket
             // 
@@ -129,12 +145,23 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(31, 68);
+            this.label4.Location = new System.Drawing.Point(31, 61);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 32);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ticket";
             this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label12.Location = new System.Drawing.Point(31, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(90, 32);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Class";
             // 
             // panel1
             // 
@@ -145,9 +172,9 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtname);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(14, 47);
+            this.panel1.Location = new System.Drawing.Point(14, 133);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(437, 218);
+            this.panel1.Size = new System.Drawing.Size(437, 202);
             this.panel1.TabIndex = 14;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -218,7 +245,7 @@
             // 
             this.button_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_back.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button_back.Location = new System.Drawing.Point(14, 620);
+            this.button_back.Location = new System.Drawing.Point(12, 674);
             this.button_back.Name = "button_back";
             this.button_back.Size = new System.Drawing.Size(155, 36);
             this.button_back.TabIndex = 18;
@@ -237,11 +264,19 @@
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.label10);
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Location = new System.Drawing.Point(14, 320);
+            this.panel4.Location = new System.Drawing.Point(14, 368);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(434, 276);
+            this.panel4.Size = new System.Drawing.Size(434, 269);
             this.panel4.TabIndex = 19;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
+            // 
+            // travelDateTimePicker
+            // 
+            this.travelDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.travelDateTimePicker.Location = new System.Drawing.Point(121, 143);
+            this.travelDateTimePicker.Name = "travelDateTimePicker";
+            this.travelDateTimePicker.Size = new System.Drawing.Size(296, 27);
+            this.travelDateTimePicker.TabIndex = 14;
             // 
             // button1
             // 
@@ -253,6 +288,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
             // 
@@ -265,20 +301,6 @@
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Seat Ac",
-            "Seat Non-Ac",
-            "Cabin Ac",
-            "Cabin Non-Ac"});
-            this.comboBox1.Location = new System.Drawing.Point(178, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(276, 37);
-            this.comboBox1.TabIndex = 10;
             // 
             // cmbto
             // 
@@ -345,33 +367,24 @@
             this.label11.TabIndex = 4;
             this.label11.Text = "Date";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(31, 14);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(90, 32);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Class";
-            // 
-            // travelDateTimePicker
-            // 
-            this.travelDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.travelDateTimePicker.Location = new System.Drawing.Point(121, 143);
-            this.travelDateTimePicker.Name = "travelDateTimePicker";
-            this.travelDateTimePicker.Size = new System.Drawing.Size(296, 27);
-            this.travelDateTimePicker.TabIndex = 14;
-            // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(714, 290);
+            this.listBox1.Location = new System.Drawing.Point(703, 368);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(518, 372);
+            this.listBox1.Size = new System.Drawing.Size(498, 324);
             this.listBox1.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::trial_transportation.Properties.Resources.pic;
+            this.pictureBox1.Location = new System.Drawing.Point(508, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 134);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // Form3
             // 
@@ -379,7 +392,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::trial_transportation.Properties.Resources._5841788204_42fcfaa708_z;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1247, 702);
+            this.ClientSize = new System.Drawing.Size(1224, 722);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.button_back);
@@ -394,6 +408,7 @@
             this.panel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,7 +432,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbclass;
         private System.Windows.Forms.ComboBox cmbto;
         private System.Windows.Forms.ComboBox cmbfrom;
         private System.Windows.Forms.Label label9;
@@ -426,5 +441,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker travelDateTimePicker;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

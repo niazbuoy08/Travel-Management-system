@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace trial_transportation
@@ -20,6 +21,15 @@ namespace trial_transportation
             InitializeComponent();
             bookings = new List<Booking3>();
         }
+
+        public static string fname = " ";
+        public static string ffrom = " ";
+        public static string fto = " ";
+        public static string fdate = " ";
+        public static string fclass = " ";
+        public static string fflight = " ";
+        public static string fseat = " ";
+
 
         private void Plane_Load(object sender, EventArgs e)
         {
@@ -38,12 +48,19 @@ namespace trial_transportation
         private void button2_Click(object sender, EventArgs e)
         {
             Price TravelPrice = new Price();
+
             PClassPrice CPrice = new PClassPrice();
+
             FlightPrice FPrice = new FlightPrice();
+
             double[] Travelcost = new double[30];
+
             double[] Classcost = new double[30];
+
             double[] Flightcost = new double[30];
+
             double Total;
+
             if (cmbto.Text == "Dhaka")
             {
                 Travelcost[0] = TravelPrice.Dhaka;
@@ -55,21 +72,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Chittagong")
             {
                 Travelcost[0] = TravelPrice.Chittagong;
@@ -81,21 +100,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Barisal")
             {
                 Travelcost[0] = TravelPrice.Barisal;
@@ -107,21 +128,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Sylhet")
             {
                 Travelcost[0] = TravelPrice.Sylhet;
@@ -133,21 +156,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Rajshahi")
             {
                 Travelcost[0] = TravelPrice.Rajshahi;
@@ -159,21 +184,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
         }
 
         private void label10_Click_1(object sender, EventArgs e)
@@ -195,7 +222,9 @@ namespace trial_transportation
         {
 
             Form2 f2 = new Form2();
+
             f2.Show();
+
             this.Hide();
         }
 
@@ -208,12 +237,19 @@ namespace trial_transportation
         {
 
             Price TravelPrice = new Price();
+
             PClassPrice CPrice = new PClassPrice();
+
             FlightPrice FPrice = new FlightPrice();
+
             double[] Travelcost = new double[30];
+
             double[] Classcost = new double[30];
+
             double[] Flightcost = new double[30];
+
             double Total;
+
             if (cmbto.Text == "Dhaka")
             {
                 Travelcost[0] = TravelPrice.Dhaka;
@@ -225,21 +261,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Chittagong")
             {
                 Travelcost[0] = TravelPrice.Chittagong;
@@ -251,21 +289,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Barisal")
             {
                 Travelcost[0] = TravelPrice.Barisal;
@@ -277,21 +317,23 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Sylhet")
             {
                 Travelcost[0] = TravelPrice.Sylhet;
@@ -303,22 +345,25 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
+
             if (cmbto.Text == "Rajshahi")
+
             {
                 Travelcost[0] = TravelPrice.Rajshahi;
                 if (cmb_class.Text == "Business")
@@ -329,21 +374,22 @@ namespace trial_transportation
                 {
                     Classcost[0] = CPrice.Economy;
                 }
-                if (flight.Text == "US Bangla")
+                if (cmb_flight.Text == "US Bangla")
                 {
                     Flightcost[0] = FPrice.USBangla;
                 }
-                else if (flight.Text == "Bangladesh Biman")
+                else if (cmb_flight.Text == "Bangladesh Biman")
                 {
                     Flightcost[0] = FPrice.BimanBangladesh;
                 }
-                else if (flight.Text == "Novo Air")
+                else if (cmb_flight.Text == "Novo Air")
                 {
                     Flightcost[0] = FPrice.NovoAir;
                 }
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
-            lblTotal.Text = Total.ToString();
+
+            total_text.Text = Total.ToString();
         }
 
         private void lblTotal_Click(object sender, EventArgs e)
@@ -353,7 +399,16 @@ namespace trial_transportation
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            fname = name_text.Text;
+            ffrom = cmbfrom.Text;
+            fto = cmbto.Text;
+            fdate = travelDateTimePicker.Value.ToString();
+            fclass = cmb_class.Text;
+            fflight=cmb_flight.Text;
+            fseat = cmb_seat.Text;
+            Planeticket ticket = new Planeticket();
+            ticket.Show();
+            this.Hide();
         }
 
         private void cmbclass_SelectedIndexChanged(object sender, EventArgs e)
@@ -445,13 +500,20 @@ namespace trial_transportation
         {
 
             string name = name_text.Text;
+
             string email = email_text.Text;
+
             string phone = contact_text.Text;
-            string From = cmbfrom.SelectedItem.ToString();
-            string To = cmbto.SelectedItem.ToString();
+
+            string from = cmbfrom.SelectedItem.ToString();
+
+            string to = cmbto.SelectedItem.ToString();
+
             DateTime travelDate = travelDateTimePicker.Value.Date;
+
             string seatNumber = cmb_seat.SelectedItem.ToString();
-            string seatclass = cmb_class.SelectedItem.ToString();
+
+            string seatClass = cmb_class.SelectedItem.ToString();
 
             foreach (Booking3 booking in bookings)
             {
@@ -462,13 +524,35 @@ namespace trial_transportation
                 }
             }
 
-            Booking3 newBooking = new Booking3(name, email, phone, From, To, travelDate, seatclass, seatclass);
-            bookings.Add(newBooking);
+            Booking3 newBooking = new Booking3(name, email, phone, from, to, travelDate, seatNumber, seatClass);
 
+            bookings.Add(newBooking);
 
             string bookingDetails = $"{newBooking.Name}, {newBooking.Email}, {newBooking.Contact}, {newBooking.From}, {newBooking.To}, {newBooking.TravelDate.ToShortDateString()}, Seat {newBooking.SeatClass}";
             listBox.Items.Add(bookingDetails);
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            name_text.Clear();
+
+            email_text.Clear();
+
+            contact_text.Clear();
+
+            total_text.Clear();
+
+
+            cmbfrom.Text = "None";
+
+            cmbto.Text = "None";
+
+            cmb_class.Text = "None";
+
+            cmb_flight.Text = "None";
+
+            cmb_seat.Text = "None";
         }
     }
 }

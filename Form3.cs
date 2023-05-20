@@ -460,7 +460,7 @@ namespace trial_transportation
             string From = cmbfrom.SelectedItem.ToString();
             string To = cmbto.SelectedItem.ToString();
             DateTime travelDate = travelDateTimePicker.Value.Date;
-            string seatclass = comboBox1.SelectedItem.ToString();
+            string seatclass = cmbclass.SelectedItem.ToString();
 
             foreach (Booking2 booking in bookings)
             {
@@ -479,6 +479,26 @@ namespace trial_transportation
             listBox1.Items.Add(bookingDetails);
 
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            txtname.Clear();
+
+            txtemail.Clear();
+
+            txtphone.Clear();
+
+
+            cmbfrom.Text = "None";
+
+            cmbto.Text = "None";
+
+            cmbticket.Text = "None";
+
+            cmbclass.Text = "None";
+
+            txtamount.Text = "None";
         }
     }
 }

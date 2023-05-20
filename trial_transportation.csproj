@@ -83,6 +83,12 @@
     <Compile Include="Plane.Designer.cs">
       <DependentUpon>Plane.cs</DependentUpon>
     </Compile>
+    <Compile Include="Planeticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Planeticket.Designer.cs">
+      <DependentUpon>Planeticket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Price.cs" />
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
@@ -99,6 +105,7 @@
       <DependentUpon>signup.cs</DependentUpon>
     </Compile>
     <Compile Include="Ticket_price.cs" />
+    <Compile Include="Ticket_price2.cs" />
     <EmbeddedResource Include="bus.resx">
       <DependentUpon>bus.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Plane.resx">
       <DependentUpon>Plane.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Planeticket.resx">
+      <DependentUpon>Planeticket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
@@ -160,12 +170,15 @@
     <None Include="Resources\PowerfulReasons_hero.jpg" />
     <None Include="Resources\blue-train.jpg" />
     <None Include="Resources\5841788204_42fcfaa708_z.jpg" />
+    <None Include="Resources\4cae70f1cbd0b3b38b79e58969e62c90.jpg" />
     <Content Include="Resources\Image1.jpg" />
     <Content Include="Resources\Image2.jpg" />
     <None Include="Resources\water-landscape-in-bangladesh.jpg" />
     <None Include="Resources\shutterstock_623111885-1-scaled-phifxb7av8bl2lrxdes1syk43v9acwtvrveysd1ouo.jpg" />
     <None Include="Resources\planeimage.jpg" />
     <None Include="Resources\newimage.jpg" />
+    <None Include="Resources\picccc.jpg" />
+    <None Include="Resources\pic.jpg" />
     <Content Include="TextFile1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

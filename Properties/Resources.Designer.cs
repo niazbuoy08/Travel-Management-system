@@ -113,6 +113,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4cae70f1cbd0b3b38b79e58969e62c90 {
+            get {
+                object obj = ResourceManager.GetObject("4cae70f1cbd0b3b38b79e58969e62c90", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5841788204_42fcfaa708_z {
             get {
                 object obj = ResourceManager.GetObject("5841788204_42fcfaa708_z", resourceCulture);
@@ -306,6 +316,26 @@ namespace trial_transportation.Properties {
         internal static System.Drawing.Bitmap pexels_anastasiya_vragova_67917412 {
             get {
                 object obj = ResourceManager.GetObject("pexels-anastasiya-vragova-67917412", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pic {
+            get {
+                object obj = ResourceManager.GetObject("pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picccc {
+            get {
+                object obj = ResourceManager.GetObject("picccc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

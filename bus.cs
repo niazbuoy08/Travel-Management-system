@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 using static trial_transportation.Booking;
 
 namespace trial_transportation
@@ -42,11 +43,11 @@ namespace trial_transportation
         public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
           
-            string name = nameTextBox.Text;
-            string email = emailTextBox.Text;
-            string phone = phoneTextBox.Text;
-            string From = comboBox1.SelectedItem.ToString();
-            string To = comboBox2.SelectedItem.ToString();
+            string name = this.txtname.Text;
+            string email = txtemail.Text;
+            string phone = txtphone.Text;
+            string From = cmbfrom.SelectedItem.ToString();
+            string To = cmbto.SelectedItem.ToString();
             DateTime travelDate = travelDateTimePicker.Value.Date;
       
       string print= "\t" + "\t" + "TICKET RECEIPT" +"\n" + "Name: "+ name+ " " + "\n" + "Email: " + email + "\n" + "Phone: " + phone + "\n" + "From: " +  From + "\n" + "To: " + To+ "\n"  + "Date: " + travelDate;
@@ -101,13 +102,13 @@ namespace trial_transportation
 
 
 
-            string name = nameTextBox.Text;
-            string email = emailTextBox.Text;
-            string phone = phoneTextBox.Text;
-            string From = comboBox1.SelectedItem.ToString();
-            string To = comboBox2.SelectedItem.ToString();
+            string name = this.txtname.Text;
+            string email = txtemail.Text;
+            string phone = txtphone.Text;
+            string From = cmbfrom.SelectedItem.ToString();
+            string To = cmbto.SelectedItem.ToString();
             DateTime travelDate = travelDateTimePicker.Value.Date;
-            int seatNumber = (int)seatNumericUpDown.Value;
+            int seatNumber = (int)seatNumeric.Value;
 
 
 
@@ -139,13 +140,13 @@ namespace trial_transportation
 
 
 
-            nameTextBox.Clear();
-            emailTextBox.Clear();
-            phoneTextBox.Clear();
-            comboBox1.SelectedIndex = -1;
-            comboBox2.SelectedIndex = -1;
+            this.txtname.Clear();
+            txtemail.Clear();
+            txtphone.Clear();
+            cmbfrom.SelectedIndex = -1;
+            cmbto.SelectedIndex = -1;
             travelDateTimePicker.Value = DateTime.Today;
-            seatNumericUpDown.Value = 1;
+            seatNumeric.Value = 1;
         }
 
 
@@ -154,7 +155,18 @@ namespace trial_transportation
 
         private void button_remove_Click(object sender, EventArgs e)
         {
+            txtname.Clear();
 
+            txtemail.Clear();
+
+            txtphone.Clear();
+
+
+            cmbfrom.Text = "None";
+
+            cmbto.Text = "None";
+
+            txtamount.Text = "None";
         }
 
 
@@ -174,6 +186,66 @@ namespace trial_transportation
 
         private void listBox_Customer_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Ticket_price2 Travel_price = new Ticket_price2();
+
+            double[] Travelcost = new double[20];
+
+            double amount;
+
+            if (cmbto.Text == "Dhaka")
+            {
+                Travelcost[0] = Travel_price.Dhaka;
+                amount = Travelcost[0];
+
+                txtamount.Text = string.Format("{0:C}", amount);
+            }
+
+            if (cmbto.Text == "Rajshahi")
+            {
+                Travelcost[0] = Travel_price.Rajshahi;
+                amount = Travelcost[0];
+
+                txtamount.Text = string.Format("{0:C}", amount);
+            }
+
+            if (cmbto.Text == "Khulna")
+            {
+                Travelcost[0] = Travel_price.Khulna;
+                amount = Travelcost[0];
+
+                txtamount.Text = string.Format("{0:C}", amount);
+            }
+
+            if (cmbto.Text == "Sylhet")
+            {
+                Travelcost[0] = Travel_price.Sylhet;
+                amount = Travelcost[0];
+
+                txtamount.Text = string.Format("{0:C}", amount);
+            }
+
+
+            if (cmbto.Text == "Barisal")
+            {
+                Travelcost[0] = Travel_price.Barisal;
+                amount = Travelcost[0];
+
+                txtamount.Text = string.Format("{0:C}", amount);
+            }
+
+            if (cmbto.Text == "Chittagong")
+            {
+                Travelcost[0] = Travel_price.Chittagong;
+                amount = Travelcost[0];
+
+                txtamount.Text = string.Format("{0:C}", amount);
+            }
+
 
         }
     }
