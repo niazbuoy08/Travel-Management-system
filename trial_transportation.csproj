@@ -158,6 +158,8 @@
     <Content Include="Resources\Image2.jpg" />
     <None Include="Resources\water-landscape-in-bangladesh.jpg" />
     <None Include="Resources\shutterstock_623111885-1-scaled-phifxb7av8bl2lrxdes1syk43v9acwtvrveysd1ouo.jpg" />
+    <None Include="Resources\planeimage.jpg" />
+    <None Include="Resources\newimage.jpg" />
     <Content Include="TextFile1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

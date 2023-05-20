@@ -263,6 +263,16 @@ namespace trial_transportation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap newimage {
+            get {
+                object obj = ResourceManager.GetObject("newimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap p {
             get {
                 object obj = ResourceManager.GetObject("p", resourceCulture);
@@ -296,6 +306,16 @@ namespace trial_transportation.Properties {
         internal static System.Drawing.Bitmap plane2 {
             get {
                 object obj = ResourceManager.GetObject("plane2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap planeimage {
+            get {
+                object obj = ResourceManager.GetObject("planeimage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
