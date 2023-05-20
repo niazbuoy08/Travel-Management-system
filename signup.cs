@@ -67,7 +67,7 @@ namespace trial_transportation
 
 
 
-            StreamReader s1 = new StreamReader(@"C:\Users\User\Downloads\project\Travel-Management-system\Travel-Management-system\user.txt");
+            StreamReader s1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\New folder (7)\Travel-Management-system\user.txt");
             string line = "";
             while ((line = s1.ReadLine()) != null)
             {
@@ -136,7 +136,7 @@ namespace trial_transportation
                     
                    
 
-                    string path = @"C:\Users\User\Downloads\project\Travel-Management-system\Travel-Management-system\user.txt";
+                    string path = @"C:\Users\User\OneDrive\Desktop\New folder (7)\Travel-Management-system\user.txt";
                     bool use = true;
 
 
@@ -160,7 +160,7 @@ namespace trial_transportation
                         //int phone = Convert.ToInt32(textBox2.Text);
                         MessageBox.Show("created!");
 
-                        string s = textBox1.Text + " " + textBox2.Text + " " + textBox4.Text + " " + comboBox1.Text + " " + textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;
+                        string s = textBox1.Text + " " + textBox2.Text + " " + textBox3 + " " + textBox4.Text + " " + comboBox1.Text + " " + textBox5.Text + " " + textBox6.Text + " " + textBox7.Text;
 
                         File.AppendAllText(path, name + " " + phone + " " + email + " " +  nation + " " + gender + " " + country + " " + userName + " " + pass);
 

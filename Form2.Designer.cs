@@ -195,6 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::trial_transportation.Properties.Resources.shutterstock_626627045_960;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1302, 798);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);

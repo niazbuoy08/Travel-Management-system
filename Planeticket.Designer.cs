@@ -49,6 +49,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.back_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -251,12 +252,25 @@
             this.label15.TabIndex = 31;
             this.label15.Text = "Class";
             // 
+            // back_button
+            // 
+            this.back_button.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.back_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_button.Location = new System.Drawing.Point(1323, 967);
+            this.back_button.Name = "back_button";
+            this.back_button.Size = new System.Drawing.Size(167, 48);
+            this.back_button.TabIndex = 32;
+            this.back_button.Text = "Back";
+            this.back_button.UseVisualStyleBackColor = false;
+            this.back_button.Click += new System.EventHandler(this.back_button_Click);
+            // 
             // Planeticket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1755, 1050);
+            this.Controls.Add(this.back_button);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -306,5 +320,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button back_button;
     }
 }

@@ -40,10 +40,10 @@ namespace trial_transportation
             
         }
 
-        public static string fname = " ";
-        public static string ffrom = " ";
-        public static string fto = " ";
-        public static string fdate = " ";
+        public static string ffname = " ";
+        public static string fffrom = " ";
+        public static string ffto = " ";
+        public static string ffdate = " ";
       /*  public void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
         {
           
@@ -80,10 +80,10 @@ namespace trial_transportation
                  printPreviewDialog.ShowDialog();
                 */
 
-                fname = txtname.Text;
-                ffrom = cmbfrom.Text;
-                fto = cmbto.Text;
-                fdate = travelDateTimePicker.Value.ToString();
+                ffname = txtname.Text;
+                fffrom = cmbfrom.Text;
+                ffto = cmbto.Text;
+                ffdate = travelDateTimePicker.Value.ToString();
                
                 busticket ticket = new busticket();
                 ticket.Show();

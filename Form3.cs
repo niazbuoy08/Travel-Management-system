@@ -521,5 +521,10 @@ namespace trial_transportation
             ticket.Show();
             this.Hide();
         }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -152,12 +152,21 @@ namespace trial_transportation
         private void busticket_Load(object sender, EventArgs e)
         {
 
-            label5.Text = bus.fname;
-            label6.Text = bus.ffrom;
-            label7.Text = bus.fto;
-            label8.Text = bus.fdate;
+            label5.Text = bus.ffname;
+            label6.Text = bus.fffrom;
+            label7.Text = bus.ffto;
+            label8.Text = bus.ffdate;
          
           
+        }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+
+            form2.Show();
+
+            this.Hide();
         }
     }
 }
