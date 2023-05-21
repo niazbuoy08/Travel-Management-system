@@ -89,7 +89,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = Total.ToString();
+            total_text.Text = string.Format("{0:C}", Total);
 
             if (cmbto.Text == "Chittagong")
             {
@@ -278,7 +278,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = string.Format("{0:C}", total_text); ;
+            total_text.Text =Total.ToString();
 
             if (cmbto.Text == "Chittagong")
             {
@@ -306,7 +306,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = string.Format("{0:C}", total_text) ;
+            total_text.Text = Total.ToString();
 
             if (cmbto.Text == "Barisal")
             {
@@ -334,7 +334,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = string.Format("{0:C}", total_text);
+            total_text.Text = Total.ToString();
 
             if (cmbto.Text == "Sylhet")
             {
@@ -362,7 +362,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = string.Format("{0:C}", total_text);
+            total_text.Text = Total.ToString();
 
             if (cmbto.Text == "Rajshahi")
 
@@ -391,7 +391,7 @@ namespace trial_transportation
             }
             Total = Travelcost[0] + Classcost[0] + Flightcost[0];
 
-            total_text.Text = string.Format("{0:C}", total_text);
+            total_text.Text = Total.ToString();
         }
 
         private void lblTotal_Click(object sender, EventArgs e)

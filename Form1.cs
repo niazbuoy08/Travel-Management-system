@@ -130,8 +130,8 @@ namespace trial_transportation
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            StreamReader s1 = new StreamReader(@"C:\Users\USER\Desktop\Go EaSy\Travel-Management-system\user.txt");
-            string line = "";
+            StreamReader s1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\New folder (9)\Travel-Management-system\newuser.txt");
+            string line = " ";
 
 
 

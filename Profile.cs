@@ -44,7 +44,7 @@ namespace trial_transportation
         private void Profile_Load(object sender, EventArgs e)
         {
 
-            StreamReader pf1 = new StreamReader(@"C:\Users\User\Downloads\project\Travel-Management-system\Travel-Management-system\user.txt");
+            StreamReader pf1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\New folder (9)\Travel-Management-system\newuser.txt");
             string line = "";
 
 
@@ -113,6 +113,13 @@ namespace trial_transportation
         private void label12_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.Show();
+            this.Hide();
         }
     }
 }
