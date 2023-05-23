@@ -357,7 +357,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(510, 47);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(203, 52);
+            this.label10.Size = new System.Drawing.Size(201, 51);
             this.label10.TabIndex = 63;
             this.label10.Text = "Go EaSy";
             // 
@@ -367,7 +367,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1257, 603);
+            this.ClientSize = new System.Drawing.Size(1326, 645);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtamount);

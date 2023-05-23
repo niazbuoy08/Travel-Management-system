@@ -410,7 +410,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(548, 46);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(203, 52);
+            this.label5.Size = new System.Drawing.Size(201, 51);
             this.label5.TabIndex = 22;
             this.label5.Text = "Go EaSy";
             this.label5.Click += new System.EventHandler(this.label5_Click_1);
@@ -421,7 +421,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::trial_transportation.Properties.Resources._5841788204_42fcfaa708_z;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1224, 722);
+            this.ClientSize = new System.Drawing.Size(1264, 762);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);

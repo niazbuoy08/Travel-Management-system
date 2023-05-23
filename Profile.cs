@@ -44,7 +44,7 @@ namespace trial_transportation
         private void Profile_Load(object sender, EventArgs e)
         {
 
-            StreamReader pf1 = new StreamReader(@"C:\Users\User\OneDrive\Desktop\New folder (9)\Travel-Management-system\newuser.txt");
+            StreamReader pf1 = new StreamReader(@"C:\Users\USER\Desktop\Go EaSy\Travel-Management-system\newuser.txt");
             string line = "";
 
 
